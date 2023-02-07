@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>기아렌터카</title>
+	<meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    
+    <link rel="shortcut icon" type="image/x-icon" href="/image/favicon/faviconDefault.ico" />
+    <link rel="stylesheet" href="https://rental.kia.com/css/color/colors.css">
+    <link rel="stylesheet" href="https://rental.kia.com/css/component.css?ver=1">
+    <script src="https://rental.kia.com/js/vendor/jquery-3.6.min.js"></script>
+    <script src="https://rental.kia.com/js/vendor/jquery-ui-1.12.1.min.js"></script>
+    <script src="https://rental.kia.com/js/vendor/jquery-ui.min.js"></script>
+    <script src="https://rental.kia.com/js/jquery.numberOnly.js"></script>
+    <script src="https://rental.kia.com/js/vendor/jquery.number-2.1.6.min.js"></script>
+    <script src="https://rental.kia.com/js/jquery.easydropdown.js"></script>
+    <script src="https://rental.kia.com/js/jquery.simple-dtpicker.js"></script>
+    <script src="https://rental.kia.com/js/jquery.timepicker.js"></script>
+    <script src="https://rental.kia.com/js/vendor/moment-2.29.1.min.js"></script>
+    <script src="https://rental.kia.com/js/vendor/moment-timezone-with-data-0.5.33.min.js"></script>
+
+    <script src="https://rental.kia.com/js/config.js"></script>
+    <script src="https://rental.kia.com/js/vendor/moment-round.min.js"></script>
+    <script src="https://rental.kia.com/js/vendor/quill.min.js"></script>
+    <script src="https://rental.kia.com/js/vendor/quill-better-table.min.js"></script>
+    <script src="https://rental.kia.com/js/vendor/spin-4.1.1.js"></script>
+    <script src="https://rental.kia.com/js/vendor/swiper-bundle.6.1.2.min.js"></script>
+    <script src="https://rental.kia.com/js/common.js?"></script>
+    <script src="https://rental.kia.com/js/component.mobile.js"></script>
+    <script src="https://rental.kia.com/js/vendor/efs_embedded_v2.js"></script>
+    <script src="https://rental.kia.com/js/eSign.js"></script>
+    <script src="https://rental.kia.com/js/messageSender.js"></script>
+	<script src="https://rental.kia.com/js/vendor/signature_pad.min.js"></script>
+	
+	
+    <link rel="stylesheet" type="text/css" href="https://rental.kia.com/css/mobile/common.css">
+    <link rel="stylesheet" type="text/css" href="https://rental.kia.com/css/vendor/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="https://rental.kia.com/css/vendor/datePickerSkin.css">
+    <link rel="stylesheet" type="text/css" href="https://rental.kia.com/css/vendor/jquery.timepicker.css">
+    <link rel="stylesheet" type="text/css" href="https://rental.kia.com/css/vendor/swiper-bundle.6.1.2.min.css">
+	<link rel="stylesheet" type="text/css" href="https://rental.kia.com/css/mobile/views/menu/KIAR_CSTA_MNU_01.css">
+</head>
+<body>
+<div class="header">
+    <!-- light,icon_only -->
+    <div class="navbar icon">
+        <div class="title_field">
+
+        </div>
+        <div class="line_darkgrey"></div>
+    </div>
+</div>
+<div class="contentBody m0">
+    <div class="contentBox">
+        <div class="button_center">
+            <div class="basic_iconic_black_left_icon">
+                <!--default, hover/focus-->
+                <div class="basic iconic black left-icon medium">
+                    <div class="typeiconic-colorblack-statedefault-sizemedium-contentleft-icon">
+                        <i class="icon-user_white"></i>
+                        <span><a href="http://uvo.connected-car.io/api/v1/user/oauth2/authorize?client_id=b086fd63-cbd0-452a-a774-a9b09a97533c&redirect_uri=http://localrentalcar.kia.com:8080/login/returnLogin.do&response_type=code&state=test">회원가입/로그인</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="menu_tab">
+        <div class="line_darkgrey"></div>
+        <!-- /*accordians*/ -->
+        <div class="accordion_menu">
+            <div class="accordions menu mobile">
+                <div class="statedefault-contentmenu-devicemobile">
+                    <span class="text">
+                        홈
+                    </span>
+                    <div class="icon_box">
+                        <i class="icon-circle_plus Buttonsicon"><span class="path1"></span><span class="path2"></span></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="line_darkgrey"></div>
+        <div class="accordions menu mobile">
+            <div class="statedefault-contentmenu-devicemobile">
+                    <span class="text">
+                        렌트
+                    </span>
+                <div class="icon_box"></div>
+            </div>
+        </div>
+        <div class="line_darkgrey"></div>
+        <div class="accordions menu mobile">
+            <div class="statedefault-contentmenu-devicemobile">
+                    <span class="text">
+                        차량관리
+                    </span>
+                <div class="icon_box"></div>
+            </div>
+        </div>
+        <div class="line_darkgrey"></div>
+        <div class="accordion_menu">
+            <div class="accordions menu mobile">
+                <div class="statedefault-contentmenu-devicemobile">
+                    <span class="text">
+                        나의정보
+                    </span>
+                    <div class="icon_box">
+                        <i class="icon-circle_plus Buttonsicon"><span class="path1"></span><span class="path2"></span></i>
+                    </div>
+                </div>
+            </div>
+            <div class="menu_toggle">
+                <div class="submenu" >
+                    <div class="submenu_title">
+                        나의정보 메인
+                    </div>
+                </div>
+                <div class="submenu">
+                    <div class="submenu_title">
+                        쿠폰
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+        <div class="line_darkgrey"></div>
+        <div class="accordion_menu">
+            <div class="accordions menu mobile">
+                <div class="statedefault-contentmenu-devicemobile">
+                    <span class="text">
+                        고객지원
+                    </span>
+                    <div class="icon_box">
+                        <i class="icon-circle_plus Buttonsicon"><span class="path1"></span><span class="path2"></span></i>
+                    </div>
+                </div>
+            </div>
+            <div class="menu_toggle">
+                <div class="submenu">
+                    <div class="submenu_title">
+                        고객지원 메인
+                    </div>
+                </div>
+                <div class="submenu">
+                    <div class="submenu_title">
+                        지점/영업소 위치 안내
+                    </div>
+                </div>
+                <div class="submenu">
+                    <div class="submenu_title">
+                        무상대차 정비공장 안내
+                    </div>
+                </div>
+                <div class="submenu">
+                    <div class="submenu_title">
+                        Auto Q 안내
+                    </div>
+                </div>
+                <div class="submenu">
+                    <div class="submenu_title">
+                        공지사항
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8"/>
+    <title>기아렌터카</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/image/favicon/faviconDefault.ico" />
+    <link rel="stylesheet" href="https://rental.kia.com/css/color/colors.css">
+    <link rel="stylesheet" href="https://rental.kia.com/css/component.css?ver=1">
+    <script src="https://rental.kia.com/js/vendor/jquery-3.6.min.js"></script>
+    <script src="https://rental.kia.com/js/vendor/jquery-ui-1.12.1.min.js"></script>
+    <script src="https://rental.kia.com/js/vendor/jquery-ui.min.js"></script>
+    <script src="https://rental.kia.com/js/jquery.numberOnly.js"></script>
+    <script src="https://rental.kia.com/js/vendor/jquery.number-2.1.6.min.js"></script>
+    <script src="https://rental.kia.com/js/jquery.easydropdown.js"></script>
+    <script src="https://rental.kia.com/js/jquery.simple-dtpicker.js"></script>
+    <script src="https://rental.kia.com/js/jquery.timepicker.js"></script>
+    <script src="https://rental.kia.com/js/vendor/moment-2.29.1.min.js"></script>
+    <script src="https://rental.kia.com/js/vendor/moment-timezone-with-data-0.5.33.min.js"></script>
+
+    <script src="https://rental.kia.com/js/config.js"></script>
+    <script src="https://rental.kia.com/js/vendor/moment-round.min.js"></script>
+    <script src="https://rental.kia.com/js/vendor/quill.min.js"></script>
+    <script src="https://rental.kia.com/js/vendor/quill-better-table.min.js"></script>
+    <script src="https://rental.kia.com/js/vendor/spin-4.1.1.js"></script>
+    <script src="https://rental.kia.com/js/vendor/swiper-bundle.6.1.2.min.js"></script>
+    <script src="https://rental.kia.com/js/common.js?"></script>
+    <script src="https://rental.kia.com/js/component.mobile.js"></script>
+    <script src="https://rental.kia.com/js/vendor/efs_embedded_v2.js"></script>
+    <script src="https://rental.kia.com/js/eSign.js"></script>
+    <script src="https://rental.kia.com/js/messageSender.js"></script>
+	<script src="https://rental.kia.com/js/vendor/signature_pad.min.js"></script>
+	
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="https://rental.kia.com/css/mobile/common.css">
+    <link rel="stylesheet" type="text/css" href="https://rental.kia.com/css/vendor/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="https://rental.kia.com/css/vendor/datePickerSkin.css">
+    <link rel="stylesheet" type="text/css" href="https://rental.kia.com/css/vendor/jquery.timepicker.css">
+    <link rel="stylesheet" type="text/css" href="https://rental.kia.com/css/vendor/swiper-bundle.6.1.2.min.css">
+	<link rel="stylesheet" type="text/css" href="https://rental.kia.com/css/mobile/views/mypage/KIAR_CSTA_MPG_01.css">
+</head>
+
+<body id="topBody">
+
+<div class="header">
+    <div class="navbar icon">
+        <div class="title_field">
+            <div class="icon_box_left">
+                <div class="icon_position"></div>
+            </div>
+            <span class="Title"></span>
+            <!-- 
+            <div class="icon_box_right">
+                <div class="icon_position" onclick="goPage('/m/mypage/setting')">
+                    <i class="icon-setting_white"></i>
+                </div>
+            </div>
+             -->
+        </div>
+    </div>
+</div>
+
+<div class="main_content">
+    <div class="title">
+        <span th:text="|${name} 님|">
+            김도신 님
+        </span>
+        <div class="basic_iconic_white_left_icon" onclick="goPage('/m/customerService/urgentService')">
+            <div class="basic iconic white left-icon medium">
+                <a href="#" class="typeiconic-colorwhite-statedefault-sizemedium-contentleft-icon">
+                    <div>
+                        <i class="icon-icn_area"></i>
+                    </div>
+                </a>
+                <span>긴급출동서비스/사고처리</span>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="box" onclick="goPage('/m/mypage/couponBook')">
+        <div class="lists_icon_1line">
+            <div class="lists icon">
+                <div class="statedefault-contenticon-line1line">
+                    <i class="icon-coupon"></i>
+                    <div class="text">
+                        쿠폰
+                    </div>
+                    <div class="list_right">
+                        <span class="box_count_content" id="coupon_count"></span>
+                        <span class="box_count_counter unit">개</span>
+                    </div>
+                    <div class="chevron_right">
+                        <i class="icon-right_bracket_black"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	<!--
+    <div class="box" onclick="goPage('/m/mypage/point')">
+        <div class="lists_icon_1line">
+            <div class="lists icon">
+                <div class="statedefault-contenticon-line1line">
+                    <i class="icon-point"></i>
+                    <div class="text">
+                        기아포인트
+                    </div>
+                    <div class="list_right">
+                        <span class="box_count_content">0</span>
+                        <span class="box_count_counter unit">P</span>
+                    </div>
+                    <div class="chevron_right">
+                        <i class="icon-right_bracket_black"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     -->
+</div>
+<div class="contentBody">
+
+        <div class="menu_lists">
+			<!-- 운전면허 약관 미수급으로 인한 히든처리
+            <div class="lists_icon_1line" onclick="goPage('/m/mypage/license')">
+                <div class="lists icon">
+                    <div class="statedefault-contenticon-line1line">
+                        <div class="text">
+                            운전면허증
+                        </div>
+                        <div class="lcState">
+                            
+                                  미등록
+                                </div>
+                        <div class="chevron_right">
+                            <i class="icon-right_bracket_black"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+			-->
+            <div class="line"></div>
+            <div class="lists_icon_1line" onclick="goPage('/m/mypage/secession')">
+                <div class="lists icon">
+                    <div class="statedefault-contenticon-line1line">
+                        <div class="text">
+                            회원탈퇴
+                        </div>
+                        <div class="chevron_right">
+                            <i class="icon-right_bracket_black"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="lists_icon_1line">
+                <div class="lists icon">
+                    <div class="statedefault-contenticon-line1line" onclick="logOutToast()">
+                        <div class="text">
+                            로그아웃
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</div>
+</body>
+</html>
